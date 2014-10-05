@@ -79,7 +79,7 @@ table {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.03px;
 	margin-top: 27px;
 	-webkit-font-smoothing: antialiased;
 }
@@ -89,11 +89,11 @@ table {
 	font-weight: 500;
 }
 /* Issues with purple hyperlink and li elments */
-a {
+.top-navigation a {
 	text-decoration: none;
 	color: #838994;
 }
-a:hover {
+.top-navigation a:hover {
 	cursor: pointer;
 	color: #333333;
 }
@@ -105,11 +105,12 @@ a:hover {
 	background-position: 0 bottom;
 	height: 573px;
 	overflow: auto;
+	text-align: center; 
 }
 
 h1, h3 {
 	font-weight: 300;
-	text-align: center; 
+	letter-spacing: 0.03px;
 }
 
 .introduction .content {
@@ -135,5 +136,99 @@ h1, h3 {
 	margin-top: 18px;
 	margin-bottom: 18px
 }
+/* Custom Button */ 
+
+.buttons {
+	width: 962px;
+	height: 68px;
+	margin-top: 35px;
+}
+
+.half {
+	display: inline-block;	
+}
+
+.buttons a {
+	text-decoration: none;
+}
+
+.buttons img {
+	margin: -1px 8px 0 0;
+}
+
+.buttons button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #f15a29;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+}
+
+.buttons span{
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	font-size: 18px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	background-color: transparent;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+span:hover {
+	cursor: pointer;
+	color: #eaebec;
+}
+
+
+
+
+
+
+
+/* Shot at annimation = fail 
+.learn-more {
+	width: 60px;
+	height: 90px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+	overflow: hidden;
+	padding-top: 0;
+	position: absolute;
+	padding: 30;
+}
+
+.learn-more .arrow {
+	-webkit-animation: exploreBounce 0.85s ease-in-out 300ms 10 alternate forwards;
+	-o-animation: exploreBounce 0.85s ease-in-out 300ms 10 alternate forwards;
+}
+*/
+
+
+
+
+
+
+
+
+
+
 
 
