@@ -146,7 +146,6 @@ h1, h3 {
 	width: 962px;
 	height: 68px;
 	margin-top: 35px;
-	background-color: transparent;
 }
 
 .half {
@@ -220,6 +219,12 @@ span:hover {
 }
 */
 /* Start of 2nd Section */
+.cases {
+	text-align: center;
+	padding: 126px 0;
+	-webkit-font-smoothing: antialiased;
+}
+
 h2 {
 	color: ##1d1e21;
 	letter-spacing: -0.02em;
@@ -227,17 +232,36 @@ h2 {
 	font-size: 44px;
 	margin-top: 18px;
 	margin-bottom: 18px;
-	text-align: center; 
 }
 
 .cases .devices {
 	width: 33.3333333%;
 	display: inline-block;
-	/* syles to assist with debugging */
+	margin: 40px 0;
+	padding: 0 15px;
+	box-sizing: border-box;
+	/* syles to assist with debugging 
 	border: 1px solid black;
 	box-sizing: border-box;
-	height: 4em;
+	height: 15em;   */
 }
+
+.cases h3 {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	margin: 18px 0;
+}
+
+.cases p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.538451538;
+	margin-bottom: 21px;
+	color: #4c5058;
+}
+
+
 
 
 
