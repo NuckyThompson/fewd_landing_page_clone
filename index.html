@@ -3,66 +3,131 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Karma Clone Made by RC</title>
+		<link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> --> 
+		
 		<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="top-navigation">
-		<div class="content">
-			<!-- Logo margin 17px from top, centered with nav bar -->
-			<img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="26px">
-			<ul class="links">
+		<nav class='top-navigation'>
+		<div class='content'>
+			<img src="img/karma-logo.svg" alt="Logo karma" class='logo' width='26px'>			
+		
+			<ul class='links'>
 				<li class="active">Meet Karma</li>
-				<li><a class="use" href="https://web.archive.org/web/20140921052433/https://yourkarma.com/how-it-works">How It Works</a></li>
-				<li><a class="shop" href="https://web.archive.org/web/20140925071009/https://yourkarma.com/products">Store</a></li>
-				<li><a class="blog" href="https://web.archive.org/web/20140715022308/https://blog.yourkarma.com/">Blog</a></li>
-				<li><a class="help" href="https://web.archive.org/web/20140702161645/https://yourkarma.com/help">Help</a></li>
-				<li><a class="login" href="https://web.archive.org/web/20140702171652/https://login.yourkarma.com/?return_to=https%3A%2F%2Fyourkarma.com%2Fdashboard">Log in</a></li>
+				<li>How it works</li>
+				<li>Store</li>
+				<li>Blog</li>
+				<li>Help</li>
+				<li>Log in</li>
 			</ul>
+
 		</div>
 	</nav>
-	<section class="introduction">
-		<div class="content">
+
+	<section class='introduction' style="vertical-align: middle;">
+		<div class='content'>
 			<h1>Introducing Karma</h1>
 			<h3>Bring WiFi with you, everywhere you go.</h3>
 			<div class="buttons">
-				<div class="half learn"><a href="#">
-					<button>Learn More</button></a>
-				</div
-				><div class="half watch"><a href="#">
+				<div class="half learn">
+					<button>Learn More</button>
+				</div	
+				><div class="half watch">
 					<span>
-						<img src="img/play-icon.svg" width="35px" height="35px" alt style="vertical-align:middle">
+						<img src="img/play-icon.svg" alt="Play icon" width="35px" height="35px">
 						Watch the video
-					</span></a>
+					</span>
+				</div
+				><div class="arrow">
+					<a href="#">
+						<img src="img/arrow-down.png" alt="" class="arrow-down">
+					</a>
 				</div>
 			</div>
-			<!--Attempt at arrow down 
-			<div class="learn-more">
-				<img src="https://dy53q6sor7j4i.cloudfront.net/assets/arrow-down-529236347332fe304ef5d8f0bf96f53b.png">
-			</div>  -->
-		</div>
-	</section>
-	<section class="cases">
-		<div class="content">
-			<h2>Everyone need a little Karma.</h2>
-			<div class="devices">
-					<img src="img/icon-devices.svg" width="127px" height="127px">
-						<h3>Internet for all devices</h3>
-						<p>Connect all your favorite devices to Karma.</p>
-			</div
-			><div class="devices">
-					<img src="img/icon-coffee.svg" width="127px" height="127px">
-						<h3>Boost your productivity</h3>
-						<p>Freedom of the internet, whereever you are.</p>
-			</div
-			><div class="devices">
-					<img src="img/icon-refill.svg" width="127px" height="127px">
-						<h3>Pay as You Go</h3>
-						<p>Take full control of your spend. Pay for all what you need.</p>
-			</div>
+			
 		</div>
 	</section>
 	
+	<section class="cases">
+		<div class="content">
+			<h2>Everyone needs a little Karma.</h2>
+		
+			<div class="devices flexbox">
+				<img src="img/icon-devices.svg" alt="">
+				<h3 class='internet'>Internet for all devices</h3>
+				<p>Connect all your favorite devices to Karma.</p>
+			</div><!--
+		 --><div class="devices flexbox">
+		 		<img src="img/icon-coffee.svg" alt="">
+		 		<h3>Boost your productivity</h3>
+		 		<p>Freedom of the internet, wherever you are.</p>
+		    </div><!--
+		 --><div class="devices flexbox">
+		 		<img src="img/icon-refill.svg" alt="">
+		 		<h3>Pay as You Go</h3>
+		 		<p>Take full control of your spend. Pay for what you need.</p>
+		 	</div>
+		</div>
+	</section>
+	<section class="buy-now">
+		<div class="content">
+			<aside class="left">
+				<h3>What is Karma?</h3>
+				<p>The search for reliable WiFi can be frustrating. During your commute, at your local coffee shop, at the airport or hotel.</p>
+				<p>Meet Karma: your pocket’s new pal. Karma will keep your devices online, everywhere you go.</p>
+				<p>Karma grabs a 4G signal and creates your own personal WiFi network. Give it a home in your bag and stay connected for good.</p>
+				<button class='buttons'>Buy Now</button>
+			</aside>
+		</div>
+	</section>
+	<footer class='social'>
+		<div class="content">
+
+			<!--<p class='logo'>
+				<a class='bbb-logo' href="http://www.bbb.org/new-york-city/business-reviews/internet-access-provider/karma-mobility-inc-in-new-york-ny-147415"></a>
+			</p>-->
+
+			<ul class="logo">
+				<li><a class='bbb-logo' href="http://www.bbb.org/new-york-city/business-reviews/internet-access-provider/karma-mobility-inc-in-new-york-ny-147415"></a></li>
+			</ul>
+			<ul class="company">
+				<li>Company</li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+			</ul>
+			<ul class="shop">
+				<li>Shop</li>
+				<li>Store</li>
+				<li>Returns</li>
+			</ul>
+			<ul class="support">
+				<li>Support</li>
+				<li>Help</li>
+				<li>Contact Us</li>
+				<li>Get Started</li>
+			</ul>
+			<ul class="news">
+				<li>Get the latest news</li>
+				<li><label for='email'>Enter Email Adress</label><input type="email" name="email" id="email" value='Private, spam-free.'>
+				</li>
+			</ul>
+			
+			
+			<hr>
+			<ul class="icons">
+				<li>Join us on</li>
+				<li><i class="fa fa-twitter"></i></li>
+				<li><i class="fa fa-facebook"></i></li>
+				<li><i class="fa fa-instagram"></i></li>
+				<li>&copy; Karma Mobility, Inc.</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
-

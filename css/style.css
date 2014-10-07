@@ -49,218 +49,302 @@ table {
 	border-spacing: 0;
 }
 /* End of Reset */
-/* Start of Custom Syles */
+/* Start of Custom Styles */
 .content {
-	box-sizing: border-box;
-	padding: 0 15px;
-	width: 970px;
-	margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif; 
+	color: #4c5058;
+	text-rendering: optimizeLegibility;
+}
+
+
 /* Navigation Section */
 .top-navigation {
-	background-color: #ffffff;
-	position: fixed;
-	width: 100%
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #eaebec;
+    position: fixed;
 }
-
 .top-navigation > .content {
-	height: 70px;
+    height: 70px;
+    padding: 0 15px;
 }
 
-.top-navigation .logo {
+.content > .logo {
 	height: 70px;
-	width: 26px;
-	display: inline-block;
 	float: left;
+}
+
+.top-navigation .links {
+	float: right;
+	font-size: 17px; 
+	margin-top: 27px;
+	color: #838994; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
 
 .top-navigation .links li {
 	display: inline-block;
-	margin-left: 2em;
+	margin-left: 25px;
+	transition: color 0.5s ease-in-out;
 }
 
-.top-navigation .links {
-	float:right;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #838994;
-	letter-spacing: 0.03px;
-	margin-top: 27px;
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+
+}
+/* =====Introduction/Jumbotron Section===== */
+.introduction {
+	background-image: url('../img/first-background.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	height: 644px;
+}
+
+.introduction .content h1, .introduction .content h3 {
+	color: white;
+}
+
+.content h1, .content h3, .content h2 {
+	font-weight: 300;
+	margin-bottom: 20px;
+	letter-spacing: 0.04em;
+	color: #1d1e21;
+}
+
+.content h1 {
+	font-size: 50px;
+	padding-top: 250px;
+}
+
+.content h3 {
+	font-weight: 400;
+	font-size: 24px;
+	margin-top: 40px;
 	-webkit-font-smoothing: antialiased;
 }
 
-.top-navigation .links .active {
-	color: #4c5058;
-	font-weight: 500;
+.content h2 {
+	margin-top: 150px;
+	font-size: 44px;
 }
-/* Issues with purple hyperlink and li elments */
-.top-navigation a {
-	text-decoration: none;
-	color: #838994;
-}
-.top-navigation a:hover {
-	cursor: pointer;
-	color: #333333;
-}
-/* End of Navigation */
-/* Introduction Section */
-.introduction {
-	background-image: url(http://www.thinkful.com/courses/curricula/FEWD-001/version/4/asset/first-background.jpg);
-	background-size: cover;
-	background-position: 0 bottom;
-	height: 573px;
-	overflow: auto;
-	text-align: center; 
+.content p {
+	font-size: 18px;
+	margin: 20px 15px 120px 15px;
 }
 
-h1, h3 {
-	font-weight: 300;
-	letter-spacing: 0.03px;
-}
-
-.introduction .content {
-	width: 100%;
-	max-width: 992px;
-	padding: 15px;
-	margin: 0 auto;
-	position: relative;
-	top: 50%;
-	margin-top: -120.50px;
-}
-
-.introduction h1 {
+.buttons button, .buttons .watch span, .buttons{
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
 	color: white;
-	font-size: 50px;
-	margin-top: 18px;
-	margin-bottom: 18px
-}
-
-.introduction h3 {
-	color: white;
-	font-size: 24px;
-	margin-top: 18px;
-	margin-bottom: 18px
-}
-/* Custom Button */ 
-.buttons {
-	width: 962px;
-	height: 68px;
-	margin-top: 35px;
+	margin-top: 10px;
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .half {
-	display: inline-block;	
+	display: inline-block;
 }
-
-.buttons a {
-	text-decoration: none;
-}
-
-.buttons img {
-	margin: -1px 8px 0 0;
-}
-
-.buttons button {
-	text-shadow: none;
-	border-style: none;
-	border-radius: 4px;
-	padding: 16px 26px;
-	line-height: 1.33;
-	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	letter-spacing: 1px;
-	color: white;
+.learn button, button.buttons{
 	background-color: #f15a29;
 }
 
-button:hover {
-	cursor: pointer;
-	background-color: #d9400e;
-	border-color: #cf3d0e;
+span img {
+	vertical-align: middle;
 }
 
-.buttons span{
-	text-shadow: none;
-	border-style: none;
-	border-radius: 4px;
-	padding: 16px 26px;
-	line-height: 1.33;
-	font-size: 18px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	letter-spacing: 1px;
-	background-color: transparent;
-	-webkit-font-smoothing: subpixel-antialiased;
+.arrow {
+	margin-top: 90px;
 }
 
-span:hover {
-	cursor: pointer;
-	color: #eaebec;
-}
-/* End of Custom Button/Introduction Section */
-/* Shot at annimation = fail 
-.learn-more {
-	width: 60px;
-	height: 90px;
-	bottom: 0;
-	left: 50%;
-	margin-left: -30px;
-	overflow: hidden;
-	padding-top: 0;
-	position: absolute;
-	padding: 30;
-}
+@-webkit-keyframes bounce{ 
+from {-webkit-transform: translateY(0px);}
+to   {-webkit-transform: translateY(30px);}
+} 
 
-.learn-more .arrow {
-	-webkit-animation: exploreBounce 0.85s ease-in-out 300ms 10 alternate forwards;
-	-o-animation: exploreBounce 0.85s ease-in-out 300ms 10 alternate forwards;
+img.arrow-down{
+  -webkit-animation: bounce 1s ease-out infinite alternate;
 }
-*/
-/* Start of 2nd Section */
-.cases {
-	text-align: center;
-	padding: 126px 0;
-	-webkit-font-smoothing: antialiased;
-}
-
-h2 {
-	color: ##1d1e21;
-	letter-spacing: -0.02em;
-	font-weight: 300;
-	font-size: 44px;
-	margin-top: 18px;
-	margin-bottom: 18px;
-}
-
+/* =====Subheader Section======= */
 .cases .devices {
-	width: 33.3333333%;
+    width: 33.3333333%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 50px;
+    text-align: center;
+	padding: 0 3px;
+	line-height: 1.5;
+}
+
+.devices h3.internet {
+	margin-right: 20px;
+}
+.devices img {
+	width: 127px;
+	height: 127px;
+}
+
+.buy-now {
+	background-image: url('../img/buy-now-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 900px;
+}
+
+.buy-now .content .left {
+	width: 32%;
+	text-align: left;
+	padding: 100px 0;
+	letter-spacing: 0.07em;
+}
+
+.left h3 {
+	color: #f15a29;
+}
+
+.left p {
+	padding: 0;
+	margin: 20px 0 0 0;
+	line-height: 1.5;
+}
+
+button.buttons {
+	margin-top: 25px;
+}
+.social {
+	color: #838994;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.social .content ul.logo,
+.social .content ul.company,
+.social .content ul.shop,
+.social .content ul.support,
+.social .content ul.news {
+	list-style: none;
+	text-align: left;
 	display: inline-block;
-	margin: 40px 0;
-	padding: 0 15px;
-	box-sizing: border-box;
-	/* syles to assist with debugging 
-	border: 1px solid black;
-	box-sizing: border-box;
-	height: 15em;   */
+	margin: 60px 30px 30px 30px;
+	vertical-align: top;
 }
 
-.cases h3 {
-	font-size: 24px;
-	font-weight: 400;
-	letter-spacing: -0.02em;
-	margin: 18px 0;
+.social .content li {
+	padding-top: 8px;
+	position: relative;
+}
+.social .content a {
+	color: #838994 ;
+	text-decoration: none;
 }
 
-.cases p {
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.538451538;
-	margin-bottom: 21px;
+.bbb-logo {
+	display: inline-block;
+	background-image: url('https://dy53q6sor7j4i.cloudfront.net/assets/blue-seal-120-61-karma-mobility-inc-147415-837052ad5015b0e38a4571d489e60fe0.png');
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 55px;
+}
+
+.social ul >:first-child {
 	color: #4c5058;
+	font-weight: 700;
+	padding-bottom: 7px;
 }
 
+.social .news input {
+	border: 1px solid #caccd1;
+	border-radius: 4px;
+	z-index: 1;
+	padding: 28px 5px 6px 12px;
+	font-size: 18px;
+	color: #caccd1;
+}
+
+.news label {
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	z-index: 2;
+	font-weight: 700;
+}
+
+label::after{
+	content: '*';
+	color: red;
+}
+
+hr {
+	border:0;
+	border-bottom: 1px solid #eaebec;
+}
+
+ul.icons >:first-child, 
+ul.icons >:last-child {
+	display: block;
+	padding: 15px;
+}
+
+.icons li {
+	display: inline-block;
+	width: 
+}
+
+.icons i.fa {
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 2px;
+	border: 1px solid #eaebec;
+	border-radius: 50%;
+}
+
+.icons i.fa-twitter {
+	color: #55acee;
+}
+
+.icons i.fa-facebook {
+	color: #4c66a4;
+}
+
+.icons i.fa-instagram {
+	color: #3f729b;
+}
+
+
+.icons li .fa-twitter:hover {
+	color:#3ea1ec;
+	cursor: pointer;
+}
+
+.icons li .fa-facebook:hover {
+	color:#445b93;
+	cursor: pointer;
+}
+
+.icons li .fa-instagram:hover {
+	color:#386589;
+	cursor: pointer;
+}
 
 
 
